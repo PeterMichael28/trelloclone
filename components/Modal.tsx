@@ -107,7 +107,7 @@ const imageRef = useRef<HTMLInputElement>(null)
 
 
           <div className='mt-4'>
-            <button type='submit' onClick={() => {}} disabled={!taskInput || loading} className='inline-flex justify-center rounded-md border border-transparent bg-blue-100 px-4 py-2 text-sm font-medium text-blue-900 hover:bg-blue-200 focus:outline-none focus-visible;ring-blue-500 focus-visible:ring-offset-2 disabled:bg-gray-100 disabled:text-gray-300 disabled:cursor-not-allowed'>Add Task</button>
+                  <button type='submit' onClick={ () => { } } disabled={ !taskInput || loading } className='inline-flex justify-center rounded-md border border-transparent bg-blue-100 px-4 py-2 text-sm font-medium text-blue-900 hover:bg-blue-200 focus:outline-none focus-visible;ring-blue-500 focus-visible:ring-offset-2 disabled:bg-gray-100 disabled:text-gray-300 disabled:cursor-not-allowed'><span className={ `${ loading && 'animate-pulse' }` }>{loading ? 'Adding...' : 'Add Task'}</span></button>
           </div>
           </Dialog.Panel>
         </Transition.Child>
